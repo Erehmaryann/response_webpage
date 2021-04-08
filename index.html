@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
+    <script src="https://kit.fontawesome.com/ac54b80d7c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- html5 shiv -->
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div class="nav-bar">
+    <!-- desktop navbar -->
+    <div class="nav-bar header desktop-view">
         <div class="logo">Snapshot</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -17,6 +25,25 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+
+    <!-- mobile navbar -->
+    <header class="mobile-view header2">
+        <div class="sticky">
+            <!-- brand -->
+            <div class="logo">Snapshot</div>
+            <!-- toggler -->
+            <span class="container btn-mobile mobile-view fa fa-bars" id="btn-toggler" aria-hidden="true"></span>
+        </div>
+        <!-- navbar links  -->
+        <nav class="nav mobile-navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>        
 
     <!-- Hero section -->
 
@@ -104,4 +131,6 @@
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
 </body>
+
+<script src="./main.js"></script>
 </html>
